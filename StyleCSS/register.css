@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?=Itim&family=Noto+Sans+Thai:wght@500&display=swap');
+*{
+    font-family: 'Noto Sans Thai';
+    margin: 0;
+}
+body{
+    background-color: #E6F2FF;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.register-box{
+    margin:3% auto 0 auto;
+    width: 80%;
+    height:80vh;
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    padding-bottom: 0.5%;
+}
+.register-form{
+    width:100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.SKR-brand{
+    color: #0079FF;
+    /* TH-first-header */
+    font-size: 6vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top:2%;
+}
+
+.sub-brand{
+    text-align: center;
+    color: var(--text-color-500, #555);
+    /* TH-first-topic */
+    font-size: 4vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom:3%;
+}
+.register-grid{
+    display:grid;
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 30% 30% 30% 30%;
+    gap:5%;
+    padding: 1%;
+    width: 96%;
+    height: 50%;
+    margin: 1% auto 1% 3%;
+    justify-content: center;
+}
+.input-register{
+    width: 80%;
+    height: 7vh;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #EDEDED;
+    border:0px;
+    padding-left: 2%;
+    font-size:2vh;
+}
+.regis-button{
+    margin: 15% 0 0 12.5%;
+    width:60%;
+    height: 60%;
+    border-radius: 0.5rem;
+    background: var(--main-color-500, #0079FF);
+    border:0;
+    font-size:2vh;
+    grid-area:4/2/5/3;
+    border-radius: 20px;
+}
+.return-to-login{
+    margin: 2% auto 0 auto;
+}
+
+@media screen and (max-width:1080px){
+    .register-grid{
+        margin:2% auto 0% 5%;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9,auto);
+        width: 96%;
+        height: 80%;
+    }
+    .input-register{
+        width: 85%;
+        border-radius: 75px;
+        padding-left: 7%;
+        /* padding-right: -14%; */
+    }
+    .register-box{
+        height: 150vh;
+        justify-content: center;
+    }
+    .register-grid{
+        gap:2.5%;
+    }
+    .name-register{
+        grid-area: 1/1/2/3;
+    }
+    .lastname-register{
+        grid-area:2/1/3/3;
+    }
+    .userID-register{
+        grid-area:3/1/4/3;
+    }
+    .busID-register{
+        grid-area:4/1/5/3;
+    }
+    .busStop-box{
+        grid-area:5/1/6/3;
+    }
+    .email-register{
+        grid-area:6/1/7/3;
+    }
+    .password-register{
+        grid-area:7/1/8/3;
+    }
+    .confirmpass-register{
+        grid-area:8/1/9/3;
+    }
+    .regis-button{
+        margin:-5% 0 0 27.5%;
+        height: 5vh;
+        width: 30vw;
+        grid-area:9/1/10/3;
+        border-radius: 40px;
+    }
+    .check-pass-register{
+        margin-top:2%;
+        display: flex;
+        flex-direction: row; 
+    }
+    #show-pass{
+        width: 5vw;
+        height: 5vh;
+    }
+    #show-pass-con{
+        width: 5vw;
+        height: 5vh;
+    }
+    #busID{
+        width: 45%;
+    }
+    #busStop{
+        width: 45%;
+    }
+}

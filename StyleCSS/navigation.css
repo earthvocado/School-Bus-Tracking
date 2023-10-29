@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?=Itim&family=Noto+Sans+Thai:wght@500&display=swap');  
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Noto Sans Thai';
+}
+.navigation-bar{
+    width:20%;
+    margin-left: -1%;
+    margin-top: -1.5%;
+    background-color: #E6F2FF;
+    position: fixed;
+}
+.checkbtn{
+    display: none;
+}
+#check{
+    display: none;
+}
+.Brand-head{
+    list-style-type: none;
+}
+.SKR-brand{
+    color: #0079FF;
+    font-size: 7.5vh;
+    font-weight: 700;
+    margin: 0;
+}
+.sub-brand{
+    color: #1D1D1D;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -4vh;
+}
+.navigation-box{
+    border-radius:1rem;
+    list-style-type: none;
+    padding-left: 30px;
+    margin: 10px;
+    margin-top: 40px;
+}
+.navigation-head{
+    color: #1D1D1D;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.sub-navigation-head{
+    color: #1D1D1D;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
+}
+nav ul li.navigation-box:hover{
+    background-color: #CCE4FF;
+    transition: .5s; 
+}
+.navigation-image{
+    display:none;
+}
+
+
+@media screen and (max-width:1200px){
+    .SKR-brand{
+        font-size: 6vh;
+    }
+    .sub-brand{
+        font-size:3vh;
+        margin-top: -3vh;
+    }
+    .navigation-box{
+        padding:0;
+        margin: 5px;
+    }
+    
+}
+@media screen and (max-width:1080px){
+    .navigation-bar{
+        border-radius: 80px 80px 0 0;
+        background-color: #FFF;
+        display: block;
+        justify-content: center;
+        bottom: 0;
+        width: 100%;
+    }
+    .navigation-head{
+        display: none; 
+    }
+    .sub-navigation-head{
+        font-size: 1.5vh;
+        white-space: nowrap;
+        text-align: center;
+        margin: 0;
+    }
+    .Brand-head{
+        list-style-type: none;
+        display:none;
+    }
+    .ul-navigation{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: 2vh auto;
+        padding: 0;
+    }
+    .navigation-image{
+        display:block;
+        width: 3vh;
+        margin:auto;
+    }
+    #hrefpage{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .navigation-body{
+        margin:0 auto;
+    }
+}
